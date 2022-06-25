@@ -18,13 +18,13 @@ from pyrogram.errors import (
 bot = Bot()
 
 API_TEXT = """Hi {}
-Welcome to Pyrogram's SESSION_STRING` generator Bot.
+This is Eagle Session Generator Bot. I can help you to generate Pyrogram String Session within few seconds....
 
 `Send your API_ID to Continue.`"""
-HASH_TEXT = "`Send your API_HASH to Continue.`\n\nPress /cancel to Cancel."
+HASH_TEXT = "`Send your API_HASH to continue.`\n\nPress /cancel to cancel."
 PHONE_NUMBER_TEXT = (
-    "`Now send your Phone number to Continue"
-    " include Country code. eg. +13124562345`\n\n"
+    "`Now send your Phone number to continue"
+    " include country code. eg. +91XXXXXXXXXX`\n\n"
     "Press /cancel to Cancel."
 )
 
@@ -60,7 +60,7 @@ async def genStr(bot: Bot, msg: Message):
     except ConnectionError:
         await client.disconnect()
         await client.connect()
-    await msg.reply("`Successfully Connected to you Client.`")
+    await msg.reply("`Successfully connected to you client.`")
     while True:
         number = await bot.ask(chat.id, PHONE_NUMBER_TEXT)
         if not number.text:
@@ -81,7 +81,7 @@ async def genStr(bot: Bot, msg: Message):
         code = await client.send_code(phone)
         await asyncio.sleep(1)
     except FloodWait as e:
-        await msg.reply(f"`you have floodwait of {e.x} Seconds`")
+        await msg.reply(f"`you have floodwait of {e.x} seconds`")
         return await bot.sleep(msg)
     except ApiIdInvalid:
         await msg.reply("`Api Id and Api Hash are Invalid.`\n\nPress /start to create again.")
@@ -159,9 +159,7 @@ It needs `API_ID` , `API_HASH` , `PHONE_NUMBER` and `One time Verification Code`
 which will send to your `PHONE_NUMBER`.
 you have to put `OTP` in `1 2 3 4 5` this format.
 
-(C) Author: [Krishna Singhal](https://t.me/Krishna_Singhal) and \
-[UsergeTeam](https://t.me/TheUserge)
-Give a Star ⭐️ to [REPO](https://github.com/Krishna-Singhal/genStr) if you like this Bot.
+© @akhilprs
 """
     await msg.reply(out, disable_web_page_preview=True)
 
