@@ -1,0 +1,22 @@
+{
+  "name": "Ok bhai",
+  "description": "string bot op ",
+  "repository": "https://github.com/idkvaiop/genStr",
+  "logo": "",
+  "keywords": ["telegram", "telegraph", "imageuploader","telegram bot"],
+  "env": {
+     "BOT_TOKEN": {
+      "description": "Your Bot token from @Botfather"
+    },
+    "API_ID": {
+      "description": "API_ID from Telegram Web"
+    },
+    "API_HASH": {
+      "description": "API_HASH from Telegram Web"
+    }
+  },
+ 
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
