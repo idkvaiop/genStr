@@ -13,7 +13,17 @@
     },
     "API_HASH": {
       "description": "API_HASH from Telegram Web"
-    }
+    },
+    "APP_NAME": {
+      "description": "Lmao"
+   
+   },
+    "APP_NAME": {
+      "description": "Lmao"
+   },
+    "HU_APP": {
+      "description ": "okvai"
+
   },
  
   "buildpacks": [
