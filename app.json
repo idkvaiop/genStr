@@ -17,14 +17,14 @@
     "API_KEY": {
       "description": "Lmao"
    
-   },
+     },
     "APP_NAME": {
       "description": "Lmao"
-   },
-    "HU_APP": {
+     },
+     "HU_APP": {
       "description": "okvai"
 
-  },
+  }
  
   "buildpacks": [
     {
