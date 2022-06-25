@@ -1,18 +1,19 @@
 {
-  "name": "Ok bhai",
-  "description": "string bot op ",
-  "repository": "https://github.com/idkvaiop/genStr",
-  "logo": "",
-  "keywords": ["telegram", "telegraph", "imageuploader","telegram bot"],
+  "logo":"",
+  "name": "String Session",
+  "description": "JAANA LAWDE.",
   "env": {
-     "BOT_TOKEN": {
-      "description": "Your Bot token from @Botfather"
+    "BOT_TOKEN": {
+      "description": "Enter bot token. Get it From @botfather.",
+      "value": ""
     },
-    "API_ID": {
-      "description": "API_ID from Telegram Web"
+    "APP_ID": {
+      "description": "Get this value from my.telegram.org!",
+      "value": ""
     },
     "API_HASH": {
-      "description": "API_HASH from Telegram Web"
+      "description": "Get this value from my.telegram.org!",
+      "value": ""
     },
     "API_KEY": {
       "description": "Lmao"
@@ -22,11 +23,13 @@
     },
     "HU_APP": {
       "description": "okvai"
+    
 
-  }
-},
- 
-  "buildpacks": [
-    {
-      "url": "heroku/python"
-    }
+
+
+}
+  },
+  "buildpacks": [{
+    "url": "https://github.com/heroku/heroku-buildpack-python.git"
+  }]
+}
