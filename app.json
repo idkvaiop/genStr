@@ -14,7 +14,7 @@
     "API_HASH": {
       "description": "API_HASH from Telegram Web"
     },
-    "APP_NAME": {
+    "API_KEY": {
       "description": "Lmao"
    
    },
@@ -22,7 +22,7 @@
       "description": "Lmao"
    },
     "HU_APP": {
-      "description ": "okvai"
+      "description": "okvai"
 
   },
  
